@@ -1,0 +1,444 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Ecommerce Admin_Dashbord</title>
+    <meta name="description" content="Sufee Admin - HTML5 Admin Template">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="apple-icon.png">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="vendors/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="vendors/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="vendors/themify-icons/css/themify-icons.css">
+    <link rel="stylesheet" href="vendors/flag-icon-css/css/flag-icon.min.css">
+    <link rel="stylesheet" href="vendors/selectFX/css/cs-skin-elastic.css">
+    <link rel="stylesheet" href="vendors/jqvmap/dist/jqvmap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="assets/css/cart.css">
+
+</head>
+
+<body>
+    <!-- Left Panel -->
+
+    <aside id="left-panel" class="left-panel">
+        <nav class="navbar navbar-expand-sm navbar-default">
+
+            <div class="navbar-header">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-menu"
+                    aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="./"><img src="images/logo.png" alt="Logo"></a>
+                <a class="navbar-brand hidden" href="./"><img src="images/logo2.png" alt="Logo"></a>
+            </div>
+
+            <div id="main-menu" class="main-menu collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active">
+                        <a href="dashbord.html"> <i class="menu-icon fa fa-dashboard"></i>Dashboard </a>
+                    </li>
+                    <h3 class="menu-title">Services</h3><!-- /.menu-title -->
+
+                    <li class="menu-item-has-children dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false"> <i class="menu-icon fa fa-th"></i>Product</a>
+                        <ul class="sub-menu children dropdown-menu">
+                            <li><i class="menu-icon fa fa-th"></i><a href="addProduct.html">Add_Product</a></li>
+                            <li><i class="menu-icon fa fa-th"></i><a href="viewProduct.html">View_Product</a></li>
+                            <li><i class="menu-icon fa fa-th"></i><a href="show_order.html">Show_Order</a></li>
+                        </ul>
+                    </li>
+                    <h3 class="menu-title">Extras</h3><!-- /.menu-title -->
+                    <li class="menu-item-has-children dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false"> <i class="menu-icon fa fa-glass"></i>Pages</a>
+                        <ul class="sub-menu children dropdown-menu">
+                            <li><i class="menu-icon fa fa-sign-in"></i><a href="page-login.html">Login</a></li>
+                            <li><i class="menu-icon fa fa-sign-in"></i><a href="page-register.html">Register</a></li>
+                            <li><i class="menu-icon fa fa-paper-plane"></i><a href="pages-forget.html">Forget Pass</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </nav>
+    </aside><!-- /#left-panel -->
+
+    <!-- Left Panel -->
+
+    <!-- Right Panel -->
+
+    <div id="right-panel" class="right-panel">
+
+        <!-- Header-->
+        <header id="header" class="header">
+
+            <div class="header-menu">
+
+                <div class="col-sm-7">
+                    <a id="menuToggle" class="menutoggle pull-left"><i class="fa fa fa-tasks"></i></a>
+                    <div class="header-left">
+                        <button class="search-trigger"><i class="fa fa-search"></i></button>
+                        <div class="form-inline">
+                            <form class="search-form">
+                                <input class="form-control mr-sm-2" type="text" placeholder="Search ..."
+                                    aria-label="Search">
+                                <button class="search-close" type="submit"><i class="fa fa-close"></i></button>
+                            </form>
+                        </div>
+
+                        <div class="dropdown for-notification">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="notification"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fa fa-bell"></i>
+                                <span class="count bg-danger">5</span>
+                            </button>
+
+                            <div class="dropdown-menu" aria-labelledby="notification">
+                                <p class="red">You have 3 Notification</p>
+                                <a class="dropdown-item media bg-flat-color-1" href="#">
+                                    <i class="fa fa-check"></i>
+                                    <p>Server #1 overloaded.</p>
+                                </a>
+                                <a class="dropdown-item media bg-flat-color-4" href="#">
+                                    <i class="fa fa-info"></i>
+                                    <p>Server #2 overloaded.</p>
+                                </a>
+                                <a class="dropdown-item media bg-flat-color-5" href="#">
+                                    <i class="fa fa-warning"></i>
+                                    <p>Server #3 overloaded.</p>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="dropdown for-message">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="message"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="ti-email"></i>
+                                <span class="count bg-primary">9</span>
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="message">
+                                <p class="red">You have 4 Mails</p>
+                                <a class="dropdown-item media bg-flat-color-1" href="#">
+                                    <span class="photo media-left"><img alt="avatar" src="images/avatar/1.jpg"></span>
+                                    <span class="message media-body">
+                                        <span class="name float-left">Jonathan Smith</span>
+                                        <span class="time float-right">Just now</span>
+                                        <p>Hello, this is an example msg</p>
+                                    </span>
+                                </a>
+                                <a class="dropdown-item media bg-flat-color-4" href="#">
+                                    <span class="photo media-left"><img alt="avatar" src="images/avatar/2.jpg"></span>
+                                    <span class="message media-body">
+                                        <span class="name float-left">Jack Sanders</span>
+                                        <span class="time float-right">5 minutes ago</span>
+                                        <p>Lorem ipsum dolor sit amet, consectetur</p>
+                                    </span>
+                                </a>
+                                <a class="dropdown-item media bg-flat-color-5" href="#">
+                                    <span class="photo media-left"><img alt="avatar" src="images/avatar/3.jpg"></span>
+                                    <span class="message media-body">
+                                        <span class="name float-left">Cheryl Wheeler</span>
+                                        <span class="time float-right">10 minutes ago</span>
+                                        <p>Hello, this is an example msg</p>
+                                    </span>
+                                </a>
+                                <a class="dropdown-item media bg-flat-color-3" href="#">
+                                    <span class="photo media-left"><img alt="avatar" src="images/avatar/4.jpg"></span>
+                                    <span class="message media-body">
+                                        <span class="name float-left">Rachel Santos</span>
+                                        <span class="time float-right">15 minutes ago</span>
+                                        <p>Lorem ipsum dolor sit amet, consectetur</p>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-5">
+                    <div class="user-area dropdown float-right d-flex align-items-center">
+
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                            <img class="user-avatar  rounded-circle show" alt="User Avatar">
+                        </a>
+
+                        <div class="user-menu dropdown-menu">
+                            <a class="nav-link" href="profile.html"><i class="fa fa-user"></i> My Profile</a>
+
+                            <a class="nav-link" href="#"><i class="fa fa-user"></i> Notifications <span
+                                    class="count">13</span></a>
+
+                            <a class="nav-link" href="#"><i class="fa fa-cog"></i> Settings</a>
+
+                            <a class="nav-link" onclick="logout()" href="javascript:avoid(0)"><i class="fa fa-power-off"></i> Logout</a>
+                        </div>
+                    </div>
+
+                    <div class="language-select dropdown" id="language-select">
+                        <a class="dropdown-toggle" href="#" data-toggle="dropdown" id="language" aria-haspopup="true"
+                            aria-expanded="true">
+                            <i class="flag-icon flag-icon-us"></i>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="language">
+                            <div class="dropdown-item">
+                                <span class="flag-icon flag-icon-fr"></span>
+                            </div>
+                            <div class="dropdown-item">
+                                <i class="flag-icon flag-icon-es"></i>
+                            </div>
+                            <div class="dropdown-item">
+                                <i class="flag-icon flag-icon-us"></i>
+                            </div>
+                            <div class="dropdown-item">
+                                <i class="flag-icon flag-icon-it"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="language-select">
+                        <a class="fs-2" onclick="cartPage()" type="button" href="cart.html">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor"
+                                class="bi bi-cart-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z">
+                                </path>
+                            </svg>
+
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </header><!-- /header -->
+        <!-- Header-->
+        <div class="breadcrumbs">
+            <div class="col-sm-4">
+                <div class="page-header float-left">
+                    <div class="page-title">
+                        <h1>Shopping Cart</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="conatiner" id="alerterr">
+
+        </div>
+
+        <div class="container px-3 my-3 clearfix">
+            <!-- Shopping cart table -->
+            <div class="card">
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="table table-bordered m-0">
+                            <thead>
+                                <tr>
+                                    <!-- Set columns width -->
+                                    <th class="text-center py-3 px-4" style="min-width: 400px;">Product Name &amp;
+                                        Details</th>
+                                    <th class="text-right py-3 px-4" style="width: 100px;">Price</th>
+                                    <th class="text-center py-3 px-4" style="width: 120px;">Quantity</th>
+                                    <th class="text-right py-3 px-4" style="width: 100px;">Total</th>
+                                    <th class="text-center align-middle py-3 px-0" style="width: 40px;"><a href="#"
+                                            class="shop-tooltip float-none text-dark" title=""
+                                            data-original-title="Clear cart">Del</i></a>
+                                    </th>
+                                    <th class="text-center align-middle py-3 px-0">
+                                        Edit
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody id="viewCart">
+
+
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- / Shopping cart table -->
+
+                    <div class="d-flex flex-wrap justify-content-end align-items-center pb-4">
+                        <div class="text-right mt-4">
+                            <label class="text-muted font-weight-normal m-0">Total price</label>
+                            <div class="text-large"><strong id="total_Sum"></strong></div>
+                        </div>
+                    </div>
+
+                    <div class="float-right">
+                        <button type="button" onclick="shopping()"
+                            class="btn btn-lg rounded btn-default md-btn-flat mt-2 mr-3">Back to
+                            shopping</button>
+                        <button type="button" class="btn btn-lg rounded btn-primary mt-2">Checkout</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <!-- /#right-panel -->
+
+        <!-- Right Panel -->
+
+        <script src="vendors/jquery/dist/jquery.min.js"></script>
+        <script src="vendors/popper.js/dist/umd/popper.min.js"></script>
+        <script src="vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="assets/js/main.js"></script>
+
+        <script src="vendors/chart.js/dist/Chart.bundle.min.js"></script>
+        <script src="assets/js/dashboard.js"></script>
+        <script src="assets/js/widgets.js"></script>
+        <script src="vendors/jqvmap/dist/jquery.vmap.min.js"></script>
+        <script src="vendors/jqvmap/examples/js/jquery.vmap.sampledata.js"></script>
+        <script src="vendors/jqvmap/dist/maps/jquery.vmap.world.js"></script>
+        <script src="watchman.js"></script>
+        <script src="img.js"></script>
+        <script type="text/javascript">
+
+            function logout(){
+                     window.location.href="page-login.html"
+                     localStorage.removeItem("userLogin");
+             }
+         </script>
+        <script>
+            (function ($) {
+                "use strict";
+
+                jQuery('#vmap').vectorMap({
+                    map: 'world_en',
+                    backgroundColor: null,
+                    color: '#ffffff',
+                    hoverOpacity: 0.7,
+                    selectedColor: '#1de9b6',
+                    enableZoom: true,
+                    showTooltip: true,
+                    values: sample_data,
+                    scaleColors: ['#1de9b6', '#03a9f5'],
+                    normalizeFunction: 'polynomial'
+                });
+            })(jQuery);
+        </script>
+        <script type="text/javascript">
+            function shopping() {
+                window.location.href = "dashbord.html"
+            }
+        </script>
+
+        <script type="text/javascript">
+
+            let cart = JSON.parse(localStorage.getItem("Cart"));
+
+            viewtbl();
+            function viewtbl() {
+                let tbl = "";
+                let sum = 0;
+                cart.map((val) => {
+                    sum = sum + (val.price * val.qty);
+                    tbl += `
+                                    <tr>
+                                        <td class="p-4">
+                                            <div class="media align-items-center">
+                                                <img src="${val.image}"
+                                                    class="d-block ui-w-40 ui-bordered mr-4" alt="">
+                                                <div class="media-body">
+                                                    <h4  class="d-block text-dark">${val.product}</h4>
+                                                    <small>
+                                                        <span class="text-muted">Description: </span> ${val.Description}
+                                                    </small>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="text-right font-weight-semibold align-middle p-4">₹${val.price}</td>
+                                        <td class="align-middle p-4"><input type="text" id="qtyValue${val.id}" readonly class="form-control-plaintext text-center"
+                                                value="${val.qty}"></td>
+                                        <td class="text-right font-weight-semibold align-middle p-4">₹${val.price * val.qty}</td>
+                                        <td class="text-center align-middle px-0"><a href="javascript:avoid(0)"
+                                                class="shop-tooltip float-none text-danger" onclick="Delete_Product(${val.id})" title=""
+                                                data-original-title="Remove" ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash3-fill" viewBox="0 0 16 16">
+                                                <path d="M11 1.5v1h3.5a.5.5 0 0 1 0 1h-.538l-.853 10.66A2 2 0 0 1 11.115 16h-6.23a2 2 0 0 1-1.994-1.84L2.038 3.5H1.5a.5.5 0 0 1 0-1H5v-1A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5Zm-5 0v1h4v-1a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5ZM4.5 5.029l.5 8.5a.5.5 0 1 0 .998-.06l-.5-8.5a.5.5 0 1 0-.998.06Zm6.53-.528a.5.5 0 0 0-.528.47l-.5 8.5a.5.5 0 0 0 .998.058l.5-8.5a.5.5 0 0 0-.47-.528ZM8 4.5a.5.5 0 0 0-.5.5v8.5a.5.5 0 0 0 1 0V5a.5.5 0 0 0-.5-.5Z"/>
+                                                </svg></a></td>
+                                        <td class="text-center align-middle px-0">
+                                           <a  onclick="edit(${val.id})" id="btnupdate${val.id}" class="text-success" >
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pen-fill" viewBox="0 0 16 16">
+                                            <path d="m13.498.795.149-.149a1.207 1.207 0 1 1 1.707 1.708l-.149.148a1.5 1.5 0 0 1-.059 2.059L4.854 14.854a.5.5 0 0 1-.233.131l-4 1a.5.5 0 0 1-.606-.606l1-4a.5.5 0 0 1 .131-.232l9.642-9.642a.5.5 0 0 0-.642.056L6.854 4.854a.5.5 0 1 1-.708-.708L9.44.854A1.5 1.5 0 0 1 11.5.796a1.5 1.5 0 0 1 1.998-.001z"/>
+                                            </svg>
+                                            </a>
+                                        </td>
+                                    </tr>
+                
+                     `
+
+
+                });
+                document.getElementById("viewCart").innerHTML = tbl;
+                document.getElementById("total_Sum").innerHTML = "₹" + sum;
+            }
+
+            function Delete_Product(id) {
+
+                for (let d in cart) {
+                    if (cart[d].id == id) {
+                        cart.splice(d, 1);
+
+                    }
+                    localStorage.setItem("Cart", JSON.stringify(cart));
+                    viewtbl();
+                }
+                document.getElementById("alerterr").innerHTML = `<div class="alert  alert-danger alert-dismissible fade show" role="alert">
+                                                    <span class="badge badge-pill badge-dager">Deleted</span> Product Delete Successfully
+                                                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                                        <span aria-hidden="true">&chi;</span>
+                                                    </button>
+                                                    </div>`
+                setTimeout(function () { document.getElementById("alerterr").innerHTML = "" }, 1500);
+
+            }
+            function edit(id) {
+                for (let i in cart) {
+                    if (cart[i].id == id) {
+                        document.getElementById(`qtyValue${cart[i].id}`).removeAttribute("readonly");
+                        document.getElementById(`qtyValue${cart[i].id}`).setAttribute("class", "form-control text-center");
+                        document.getElementById(`btnupdate${cart[i].id}`).setAttribute("onclick", `update(${cart[i].id})`);
+                    }
+                }
+            }
+            function update(id) {
+
+                let val = document.getElementById(`qtyValue${id}`).value;
+
+                if (val <= 0) {
+
+                    document.getElementById("alerterr").innerHTML = `<div class="alert  alert-danger alert-dismissible fade show" role="alert">
+                                                <span class="badge badge-pill badge-dager">Quantity Not Valid</span> Minimum Quantity Grater Zero
+                                                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                                    <span aria-hidden="true">&chi;</span>
+                                                </button>
+                                                </div>`
+
+
+                }
+                else {
+                    for (let i in cart) {
+                        if (cart[i].id == id) {
+                            cart[i].qty = val;
+                            console.log("done");
+                            document.getElementById(`qtyValue${cart[i].id}`).setAttribute("readonly",true);
+                            document.getElementById(`qtyValue${cart[i].id}`).setAttribute("class", "form-control-plaintext text-center");
+                            document.getElementById(`btnupdate${cart[i].id}`).setAttribute("onclick", `edit(${cart[i].id})`);
+                        }
+                        localStorage.setItem("Cart", JSON.stringify(cart));
+                    }
+
+                }
+                viewtbl();
+                setTimeout(function () { document.getElementById("alerterr").innerHTML = "" }, 1500);
+            }
+
+        </script>
+
+
+
+</body>
+</html>
